@@ -1,3 +1,3 @@
-# MDN Learn CSS Syntax
+# MDN Learn CSS Tasks
 
-Here you can see my resolution of some MDN Learn Task about CSS Syntax
+Here you can see my resolution of some MDN Learn Tasks about CSS
