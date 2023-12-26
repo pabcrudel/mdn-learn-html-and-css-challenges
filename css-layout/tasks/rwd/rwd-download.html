@@ -80,6 +80,41 @@
         padding: 0.5em 1em;
         color: #fff;
       }
+
+      @media screen and (min-width: 1000px) {
+        /* Header and Nav */
+        header {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+        header nav ul {
+          display: flex;
+          flex-direction: row;
+        }
+        header a {
+          border-top: none;
+        }
+
+        /* Article and Aside */
+        main {
+          --gap: 20px;
+
+          display: grid;
+          grid-template-columns: 3fr 1fr;
+          gap: var(--gap);
+
+          margin-top: var(--gap);
+        }
+
+        /* Cards */
+        .cards {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: var(--gap);
+        }
+      }
     </style>
   </head>
 
