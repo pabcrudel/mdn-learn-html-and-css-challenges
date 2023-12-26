@@ -24,6 +24,9 @@
         width: 500px;
         padding: 0.5em;
         border: 5px solid #ccc;
+
+        /* Absolute children will took this as a relative box */
+        position: relative;
       }
 
       .target {
@@ -32,6 +35,13 @@
         border-radius: 5px;
         background-color: rgb(207 232 220);
         padding: 1em;
+
+        /* Make this absolute and move it to the top and right */
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #663398;
+        color: #fff;
       }
     </style>
   </head>
