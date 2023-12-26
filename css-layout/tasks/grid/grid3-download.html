@@ -30,10 +30,26 @@
         padding: 0.5em;
       }
 
+      /* Using areas to to lay the items out */
       .grid {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+          'one one one'
+          'two three three'
+          'none four four';
         gap: 10px;
+      }
+      .one {
+        grid-area: one;
+      }
+      .two {
+        grid-area: two;
+      }
+      .three {
+        grid-area: three;
+      }
+      .four {
+        grid-area: four;
       }
     </style>
   </head>

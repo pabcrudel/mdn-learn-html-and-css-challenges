@@ -45,6 +45,18 @@
         font-size: 80%;
         margin: 5px;
       }
+
+      /* Combine flexbox and grid to display cards with pictures and tags */
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     </style>
   </head>
 
