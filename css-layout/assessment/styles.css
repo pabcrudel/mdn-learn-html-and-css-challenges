@@ -1,0 +1,84 @@
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.logo {
+  font-size: 200%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.grid {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 980px;
+}
+
+nav {
+  background-color: #000;
+  padding: .5em;
+
+  /* 2 - The navigation bar should scroll with the content and then become stuck
+  at the top of the viewport when it reaches it. */
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  /* 1 - Display the navigation items in a row, with an equal amount of space
+  between the items. */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+
+.photos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feature {
+  width: 200px;
+
+  /* 3 - The image that is inside the article should have text wrapped around
+  it. */
+  float: left;
+  --side-gap: 20px;
+  margin-right: var(--side-gap);
+  margin-bottom: var(--side-gap);
+}
+
+/* 4 - The <article> and <aside> elements should display as a two column layout.
+The columns should be a flexible size so that if the browser window shrinks
+smaller the columns become narrower. */
+main {
+  display: flex;
+}
+
+/* 5 - The photographs should display as a two column grid with a 1 pixel gap
+between the images. */
+aside .photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+}
