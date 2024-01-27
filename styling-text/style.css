@@ -160,3 +160,12 @@ a[href^="https"] {
   padding-right: 1.5em;
 }
 
+/* Give your list items a nice bullet appropriate for the design of the page. It
+is up to you whether you choose a custom bullet image or something else. */
+ul {
+  list-style: square;
+}
+ol {
+  list-style: lower-alpha;
+}
+
