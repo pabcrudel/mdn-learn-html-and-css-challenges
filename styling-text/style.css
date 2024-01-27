@@ -43,3 +43,56 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+
+/* Libre Baskerville */
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('fonts/Libre_Baskerville/LibreBaskerville-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('fonts/Libre_Baskerville/LibreBaskerville-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Fira Sans */
+@font-face {
+  font-family: 'FiraSans';
+  src: url('fonts/Fira_Sans/FiraSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url('fonts/Fira_Sans/FiraSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url('fonts/Fira_Sans/FiraSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Apply fonts to the website */
+body {
+  font-family: 'FiraSans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'LibreBaskerville', serif;
+}
