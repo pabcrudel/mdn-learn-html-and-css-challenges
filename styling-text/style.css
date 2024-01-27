@@ -1,0 +1,190 @@
+:root {
+  --main-color: #a66;
+}
+
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid var(--main-color);
+  border-bottom: 5px solid var(--main-color);
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+/* Libre Baskerville */
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('fonts/Libre_Baskerville/LibreBaskerville-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('fonts/Libre_Baskerville/LibreBaskerville-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Fira Sans */
+@font-face {
+  font-family: 'FiraSans';
+  src: url('fonts/Fira_Sans/FiraSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url('fonts/Fira_Sans/FiraSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url('fonts/Fira_Sans/FiraSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Apply fonts to the website */
+body {
+  font-family: 'FiraSans', sans-serif;
+
+  /* Give the page a site-wide font-size of 10px. */
+  font-size: 10px;
+
+  /* Give your body text a suitable line-height. */
+  line-height: 1.5em;
+
+  /* Give your body text some letter-spacing and word-spacing, as
+  appropriate. */
+  letter-spacing: .05em;
+  word-spacing: .07em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'LibreBaskerville', serif;
+
+  /* Give your headings a little bit of letter-spacing to make them not too
+  squashed, and allow the letters to breathe a bit. */
+  letter-spacing: .1em;
+}
+
+h1 {
+  /* Center your top level heading on the page. */
+  text-align: center;
+}
+
+section h2 + p {
+  /* Give the first paragraph after each heading in the <section> a little bit
+  of text-indentation, say 20px. */
+  text-indent: 20px;
+}
+
+a {
+  /* Give the link, visited, focus, and hover states some colors that go with
+  the color of the horizontal bars at the top and bottom of the page. */
+  color: var(--main-color);
+}
+
+/* Make it so that links are underlined by default, but when you hover or focus
+them the underline disappears. */
+a {
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* Remove the default focus outline from ALL the links on the page. */
+a:focus {
+  outline: none;
+}
+
+/* Give the active state a noticeably different styling so it stands out nicely,
+but make it still fit in with the overall page design. */
+a:active {
+  font-weight: bolder;
+}
+
+/* Make it so that external links have the external link icon inserted next to
+them. */
+a[href^="https"] {
+  background: url('external-link-52.png') no-repeat right / contain;
+  padding-right: 1.5em;
+}
+
+/* Give your list items a nice bullet appropriate for the design of the page. It
+is up to you whether you choose a custom bullet image or something else. */
+ul {
+  list-style: square;
+}
+ol {
+  list-style: lower-alpha;
+}
+
+/* Style your navigation menu so that it harmonizes with the page. */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+nav li {
+  border: 1px solid var(--main-color);
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+nav a {
+  text-decoration: none;
+}
