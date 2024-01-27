@@ -126,3 +126,37 @@ section h2 + p {
   of text-indentation, say 20px. */
   text-indent: 20px;
 }
+
+a {
+  /* Give the link, visited, focus, and hover states some colors that go with
+  the color of the horizontal bars at the top and bottom of the page. */
+  color: var(--main-color);
+}
+
+/* Make it so that links are underlined by default, but when you hover or focus
+them the underline disappears. */
+a {
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* Remove the default focus outline from ALL the links on the page. */
+a:focus {
+  outline: none;
+}
+
+/* Give the active state a noticeably different styling so it stands out nicely,
+but make it still fit in with the overall page design. */
+a:active {
+  font-weight: bolder;
+}
+
+/* Make it so that external links have the external link icon inserted next to
+them. */
+a[href^="https"] {
+  background: url('external-link-52.png') no-repeat right / contain;
+  padding-right: 1.5em;
+}
+
