@@ -169,3 +169,22 @@ ol {
   list-style: lower-alpha;
 }
 
+/* Style your navigation menu so that it harmonizes with the page. */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+nav li {
+  border: 1px solid var(--main-color);
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+nav a {
+  text-decoration: none;
+}
