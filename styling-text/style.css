@@ -1,3 +1,7 @@
+:root {
+  --main-color: #a66;
+}
+
 /* General setup */
 
 * {
@@ -38,8 +42,8 @@ header, section, aside, nav, footer {
 /* header and footer */
 
 header, footer {
-  border-top: 5px solid #a66;
-  border-bottom: 5px solid #a66;
+  border-top: 5px solid var(--main-color);
+  border-bottom: 5px solid var(--main-color);
 }
 
 /* WRITE YOUR CODE BELOW HERE */
