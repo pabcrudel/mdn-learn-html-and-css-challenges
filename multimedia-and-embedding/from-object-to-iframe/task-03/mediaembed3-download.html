@@ -21,12 +21,27 @@
   <body>
     <h1>Embedding</h1>
 
-    <!-- PDF embed here  -->
+    <object
+      data="media/mypdf.pdf"
+      type="application/pdf"
+      width="720" height="720"
+    >
+      <p>
+        You don't have a PDF plugin, but you can
+        <a href="media/mypdf.pdf">download the PDF file. </a>
+      </p>
+    </object>
 
     <hr>
 
-    <!-- 3rd party embed here  -->
-
+    <iframe lang="es"
+      src="https://www.youtube-nocookie.com/embed/L3C6UHxJSbo?rel=0&iv_load_policy=3"
+      width="560" height="315"
+      title="¿Por qué salirse del Cloud? ¡ADIOS AWS y Azure! 👋"
+      frameborder="0"
+      allowfullscreen
+    >
+    </iframe>
   </body>
 
 </html>
