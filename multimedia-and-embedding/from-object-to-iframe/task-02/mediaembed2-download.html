@@ -25,7 +25,25 @@
   <body>
     <h1>Video embed</h1>
 
-    <video>
+    <video
+      controls
+      muted
+      width="320"
+      height="240"
+      preload="auto"
+    >
+      <source src="media/video.mp4" type="video/mp4" />
+      <source src="media/video.webm" type="video/webm" />
+      <track
+        src="media/subtitles_en.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="English"
+      >
+      <p>
+        Your browser doesn't support this video. Here is a
+        <a href="media/video.mp4">link to the video</a> instead.
+      </p>
     </video>
   </body>
 
