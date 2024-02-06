@@ -19,20 +19,20 @@ decide to create two specific repositories to do so:
 When I start doing the MDN Learn challenges, I've made a repository for CSS
 challenges and another one for HTML. However, when I was doing the task of
 [Typesetting a community school homepage](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Typesetting_a_homepage)
-I thought that having 2 separated repositories have no sense so I merge them.
+I thought that having 2 separated repositories make no sense so I merge them.
 
 ### How to do it step-by-step
 
 #### 1. Clone repositories to merge
 
 First of all you must clone the repositories that you want to merge. To make
-this process easier I specify a sorter name to each repository: html and css.
+this process easier I specify a shorter name to each repository: html and css.
 
 ```bash
 git clone https://github.com/<username>/<repository-name>.git html
 ```
 
-In my case, I clone this repositories.
+In my case, I clone these repositories.
 
 ```bash
 git clone https://github.com/pabcrudel/mdn-learn-html-introduction.git html
@@ -95,7 +95,7 @@ git merge css/main --no-commit --allow-unrelated-histories
 git commit -m "Merging from html/css"
 ```
 
-#### 5. Testing that the history have been preserved
+#### 5. Testing that the history has been preserved
 
 To do so you must inspect the logs.
 
